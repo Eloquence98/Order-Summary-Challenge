@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500;700;900&display=swap');
+
+:root {
+    --bg-color: hsl(225, 100%, 95%);
+    --hlBtn-color: hsl(245, 75%, 52%);
+    --cardBg-color: hsl(225, 100%, 98%);
+    --heading-color: hsl(223, 47%, 23%);
+    --content-color: hsl(224, 23%, 55%);
+    --hover-color: hsla(245, 83%, 68%, 1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--content-color);
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    line-height: 1.6;
+}
+
+a {
+    color: var(--hlBtn-color);
+    font-weight: 700;
+}
+
+a:hover {
+    color: var(--hover-color);
+    cursor: pointer;
+}
+
+h1, h2, h3, h4 ,h5 ,h6 {
+    color: var(--heading-color);
+}
+
+.card {
+    border-radius: 20px ;
+    box-shadow: 0 18px 20px rgba(185, 201, 255, 0.6);
+}
+
+.btn {
+    background-color: var(--hlBtn-color);
+    border-style: none;
+    color: #f8f7ff;
+    font-weight: 700;
+    margin: 17px auto;
+    padding: 17px;
+}
+
+/* BG Image */
+/* I couldn't make this background image responsive with the design, tried a lot of different ways couldn't make it work REALLY NEED HELP ON THIS ONE */
+/* .lg-bg-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -720px;
+    max-width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.sm-bg-img {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -187.5px;
+    max-width: 100%;
+    height: auto;
+    z-index: -2;
+} */
+
+/* Main Card */
+
+.main {
+    background-color: #fff;
+    margin: 100px auto;
+    width: 450px;
+}
+
+/* Card Header */
+
+.hero {
+    border-radius: 20px 20px 0 0 ;
+    width: 100%;
+}
+
+/* Card Body */
+/* Order Summary */
+
+.card-body {
+    padding: 30px 50px;
+}
+
+.heading {
+    font-weight: 900;
+    font-size: 1.9rem;
+}
+
+.summary p {
+    padding: 11px;
+}
+
+/* PlanSection */
+.plan.flex {
+    background-color: var(--cardBg-color);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px 25px
+}
+
+.flex div:nth-child(2) {
+    margin: 0 20px;
+}
+
+.flex div:nth-child(3) {
+    margin-left: auto;
+}
+
+.icon img {
+    display: block;
+}
+
+/* Order Proceed */
+
+.order {
+    position: relative;
+}
+
+.btn.card {
+    border-radius: 12px;
+    box-shadow: hsla(245, 75%, 52%, 0.2);
+    font-size: 14px;
+    width: 100%;
+}
+
+.btn.card:hover {
+    cursor: pointer;
+    background-color: var(--hover-color);
+}
+
+/* Order Cancel */
+.order p {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 15px;
+    margin: 15px;
+}
+
+.order p:hover {
+    color: var(--heading-color);
+    cursor: pointer;
+}
+
+/* attribution */
+.attribution {
+    position: fixed;
+    width: 350px;
+    left: 50%;
+    top: 100%;
+    margin-left: -175px;
+    margin-top: -49px;
+  
+  }
+  
+  .attribution p {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+
+/* Flex */
+.flex {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+/* Tablet Size */
+
+@media (max-width: 768px) {
+    .main {
+        margin: 100px auto;
+        width: 450px;
+    }
+}
+
+/* Mobile Size */
+    
+@media (max-width: 375px) {
+    .lg-bg-img {
+        display: none;
+    }
+    .main {
+        margin: 50px auto;
+        width: 88%;
+    }
+    .card-body {
+        padding: 20px 25px;
+    }
+}
